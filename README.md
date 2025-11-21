@@ -49,7 +49,7 @@ javac -cp ".;json-20210307.jar" PolynomialSolver.java
 Run the program with your JSON input file:
 
 bash
-Copy code
+
 java -cp ".;json-20210307.jar" PolynomialSolver input1.json
 Output will be the evaluated polynomial value at x_value.
 
@@ -58,7 +58,7 @@ Test Case 1
 input1.json
 
 json
-Copy code
+
 {
     "keys": { "n": 4, "k": 3 },
     "1": { "base": "10", "value": "4" },
@@ -73,7 +73,7 @@ Test Case 2
 input2.json
 
 json
-Copy code
+
 {
   "keys": { "n": 10, "k": 7 },
   "1": { "base": "6", "value": "13444211440455345511" },
@@ -97,6 +97,3 @@ Java 8+ (BigInteger required)
 
 Author
 Mani Chandrika Charugundla
-
-yaml
-Copy code
