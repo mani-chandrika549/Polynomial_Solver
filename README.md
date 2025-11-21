@@ -32,7 +32,6 @@ Example:
     "6": { "base": "4", "value": "213" },
     "x_value": "2"
 }
-
 keys.n : number of roots in JSON
 
 keys.k : minimum roots required for polynomial (not used in calculation)
@@ -42,24 +41,24 @@ Each numbered key represents a root with base and value
 x_value : the x at which to evaluate the polynomial
 
 How to Run
-
 Compile the Java program:
 
+bash
+Copy code
 javac -cp ".;json-20210307.jar" PolynomialSolver.java
-
-
 Run the program with your JSON input file:
 
+bash
+Copy code
 java -cp ".;json-20210307.jar" PolynomialSolver input1.json
-
-
 Output will be the evaluated polynomial value at x_value.
 
 Test Cases
 Test Case 1
-
 input1.json
 
+json
+Copy code
 {
     "keys": { "n": 4, "k": 3 },
     "1": { "base": "10", "value": "4" },
@@ -68,14 +67,13 @@ input1.json
     "6": { "base": "4", "value": "213" },
     "x_value": "2"
 }
-
-
 Output: 3700
 
 Test Case 2
-
 input2.json
 
+json
+Copy code
 {
   "keys": { "n": 10, "k": 7 },
   "1": { "base": "6", "value": "13444211440455345511" },
@@ -90,15 +88,15 @@ input2.json
   "10": { "base": "7", "value": "1101613130313526312514143" },
   "x_value": "2"
 }
-
 Output: Positive evaluated constant
 
 Dependencies
-
 json-20210307.jar : JSON parsing library
 
 Java 8+ (BigInteger required)
 
 Author
-
 Mani Chandrika Charugundla
+
+yaml
+Copy code
